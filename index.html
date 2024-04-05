@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Anniversary!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Happy 6 Months Together!</h1>
+      </header>
+      <div class="content">
+        <p>Dear Angel,</p>
+        <p>it's been <span style="color: red;"> 6 Months</span> we have met , here is a very little gift for you</p>
+        <div class="cute-emojis">
+          <span class="emoji">❤️</span>
+          <span class="emoji">❤️</span><span class="emoji">❤️</span><span class="emoji">❤️</span><span class="emoji">❤️</span>
+        </div>
+        <button onclick="displayLoveLetter()">Read Love Letter</button>
+        <div id="loveLetter" class="hidden">
+          <p class="letter" style="margin-top: 10px;">
+            My Dearest Shaddu, my Pillu Bacha, my Lolu, my Momo, my Bayku,
+
+            I wanted to take a moment to express just how much you mean to me. You bring so much joy and happiness into my life every single day, and I am incredibly grateful to have you by my side.
+            
+            You are my sunshine on the cloudiest days, my laughter in the quiet moments, and my comfort in times of need. Your smile lights up my world like nothing else, and your love fills my heart with warmth.
+            
+            From the moment we met, you captured my heart with your kindness, humor, and beautiful soul. I cherish every memory we've created together and look forward to countless more adventures with you.
+            
+            You are not just my girlfriend; you are my best friend, my confidante, my everything. I fall in love with you more and more each day, and I can't imagine my life without you in it.
+            
+            Thank you for being the most amazing person and partner anyone could ask for. You inspire me, support me, and love me unconditionally, and for that, I am eternally grateful.
+            
+            Here's to many more moments of love, laughter, and happiness together. I love you more than words can express, Shaddu.
+            <br>
+            Forever yours,
+            PIKLU
+             ❤️
+          </p>
+        </div>
+        <button onclick="startTicTacToe()">Play Tic-Tac-Toe</button>
+        <div id="ticTacToeBoard" class="hidden">
+          <h2>Tic-Tac-Toe</h2>
+          <div id="board" class="board">
+            <div id="main">
+              <h1>TIC TAC TOE</h1>
+              <p id="ins">
+                Game starts by just Tap on box<br /><br />First Player starts as
+                <b>Player X </b>And Second Player as
+                <b>Player 0</b>
+              </p>
+              <br /><br />
+              <div class="ui">
+                <div class="row">
+                  <input
+                    type="text"
+                    id="b1"
+                    class="cell"
+                    onclick="myfunc_3(); myfunc();"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    id="b2"
+                    class="cell"
+                    onclick="myfunc_4(); myfunc();"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    id="b3"
+                    class="cell"
+                    onclick="myfunc_5(); myfunc();"
+                    readonly
+                  />
+                </div>
+                <div class="row">
+                  <input
+                    type="text"
+                    id="b4"
+                    class="cell"
+                    onclick="myfunc_6(); myfunc();"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    id="b5"
+                    class="cell"
+                    onclick="myfunc_7(); myfunc();"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    id="b6"
+                    class="cell"
+                    onclick="myfunc_8(); myfunc();"
+                    readonly
+                  />
+                </div>
+                <div class="row">
+                  <input
+                    type="text"
+                    id="b7"
+                    class="cell"
+                    onclick="myfunc_9(); myfunc();"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    id="b8"
+                    class="cell"
+                    onclick="myfunc_10();myfunc();"
+                    readonly
+                  />
+                  <input
+                    type="text"
+                    id="b9"
+                    class="cell"
+                    onclick="myfunc_11();myfunc();"
+                    readonly
+                  />
+                </div>
+              </div>
+              <br /><br /><br />
+
+              <button id="but" onclick="myfunc_2()">RESET</button>
+              <br /><br />
+              <p id="print"></p>
+            </div>
+          </div>
+        </div>
+        <button onclick="startMaze()">find me</button>
+        <div id="mazeboard" class="hidden">
+          <div class="menubar">
+            <h2
+              style="
+                color: rgb(70, 50, 52);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                  sans-serif;
+              "
+            >
+              <u>Navigate the Labyrinth</u>
+            </h2>
+            <button class="startbtn">Start</button>
+            <button id="btnUp">Up</button>
+            <button id="btnDown">Down</button>
+            <button id="btnRight">Right</button>
+            <button id="btnLeft">Left</button>
+          </div>
+          <ul class="background">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="content">
+            <div class="msgbox"></div>
+            <canvas id="mazeCanvas" height="400px" width="400px"> </canvas>
+          </div>
+          <script src="script2.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
